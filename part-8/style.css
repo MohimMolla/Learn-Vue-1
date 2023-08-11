@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif;
+	line-height: 1.8;
+}
+header{
+	background-color: blueviolet;
+	color: rgb(186, 199, 186);
+	font-size: 22px;
+	padding: 22px;
+}
+header h2{
+	text-align: center;
+}
+#app{
+	padding: 33px;
+}
+#app1{
+	padding: 33px;
+}
+button{
+	padding: 5px 11px;
+	margin: 5px;
+}
+.card{
+	height: 200px;
+	width: 200px;
+	border: 1px solid gray;
+}

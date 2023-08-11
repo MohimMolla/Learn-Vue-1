@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vue JS 3 Bangla Tutorial</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="vue.global.js"></script>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td,
+    th {
+      border: 1px solid gray;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>Vue JS 3 Bangla Tutorial</h2>
+    <h3>List rendering of object and numbers</h3>
+  </header>
+
+  <div id="app">
+    <h3>About Me</h3>
+
+    <table>
+      <tr v-for="(value, key, i) in aboutMe">
+
+        <th>{{i + 1}}</th>
+        <th>{{key}}</th>
+        <td>{{value}}</td>
+      </tr>
+    </table>
+    <br>
+    <p>
+      <span v-for="skil in skills">{{skil.name}}, </span>
+    </p>
+    <br>
+    <div>
+      <p v-for="i in 9">
+        {{i}}
+      </p>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

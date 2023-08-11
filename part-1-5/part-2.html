@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		//console.log(window);
+		//window.alert("Hello Mohim!");
+	//alert(window.innerWidth);
+	function start(){
+		console.log("Start");
+	}
+
+	function proces(callback){
+	setTimeout(function(){
+		console.log("proces");
+		callback();
+	},1000)
+		
+	}
+	//function proces(){
+	//setTimeout(function(){
+	//	console.log("proces");
+	//},1000)
+		
+	//}
+
+	function finish(){
+		console.log("finish");
+	}
+	start();
+	proces(
+		function(){
+			finish();
+		}
+	);
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<!-- Include Vue.js using a script tag -->
+	<script src="vue.global.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h2>Vue js 3 Bangla Tutrial </h2>
+		<p>For in loops</p>
+	</header>
+	<div id="app">
+		<h3>Skils</h3>
+		<input type="text" v-model="newSkil" name="" id="">
+		<button @click="addskill">Add Skil</button>
+		<br>
+		<p>Your Input is : {{newSkil}}</p>
+		<ul>
+			<li v-for="(skill, i) in skills" @click="removeSkill(i)">{{i + 1}} {{skill}}</li>
+		</ul>
+
+		<hr><br>
+		<!--<input type="text" v-model="moreskillsadd.names" name="" id="">
+		<button @click="addmoreskillsadd">Add Skil</button>
+
+		<ul>
+			<li v-for="(m_skill, i) in moreskills" @click="m_removeSkill(i)">{{i + 1}} {{m_skill.names}} -> ({{m_skill.exprience}})</li>
+		</ul>-->
+		<input type="text" v-model="moreskillsadd.names" name="" id="">
+		<button @click="addmoreskillsadd">Add Skill</button>
+
+		<ul>
+			<li v-for="(m_skill, i) in moreskills" @click="m_removeSkill(i)">
+				{{ i + 1 }} {{ m_skill.names }} -> ({{ m_skill.exprience }})
+			</li>
+		</ul>
+	</div>
+
+	<script src="app.js"></script>
+
+
+
+</body>
+
+</html>

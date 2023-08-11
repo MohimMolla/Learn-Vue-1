@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<!-- Include Vue.js using a script tag -->
+	<script src="vue.global.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h2>Vue js 3 Bangla Tutrial </h2>
+	</header>
+	<div id="app">
+
+		<p>Counter :{{count}} </p>
+
+		<!--<button @click="increment">Increment</button>-->
+		<button v-on:click="increases(1)">Increment 1</button>
+		<!--<button @click="decrement">Decrement</button>-->
+		<button v-on:click="decreases(1)">Decrement 1</button>
+		<br>
+		<!--<button @click="increment">Increment</button>-->
+		<button v-on:click="increases(2)">Increment 2</button>
+		<!--<button @click="decrement">Decrement</button>-->
+		<button v-on:click="decreases(2)">Decrement 2</button>
+		<br>
+		<hr>
+		<button @click="test($event)">Test</button>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+
+</html>

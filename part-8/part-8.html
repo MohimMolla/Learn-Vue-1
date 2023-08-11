@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<!-- Include Vue.js using a script tag -->
+	<script src="vue.global.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h2>Vue js 3 Bangla Tutrial </h2>
+	</header>
+	<div id="app">
+		<h2>Enter a number</h2>
+		<!--<input :value="num" type="text" @input="handelInput">-->
+		<!--when i use tow way data binding then i use this v-model -->
+				<input v-model.number="num" type="text">
+		<br>
+		<button @click="getdouble">Get Double</button>
+		<button @click="getsqure">Get Squere</button>
+		<button @click="addten">Add 10</button>
+		<button @click="reset">Reset</button>
+		<hr>
+		<label for="">Entere Number : {{num}}</label>
+		<br>
+		<label for="">Result : {{result}}</label>
+	</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+
+</html>

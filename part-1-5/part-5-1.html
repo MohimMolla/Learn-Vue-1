@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue.js Apps</title>
+  <!--<script src="https://cdn.jsdelivr.net/npm/vue@3.2.16/dist/vue.global.js"></script>-->
+		<script src="vue.global.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>Vue js 3 Bangla Tutorial</h2>
+  </header>
+  <div id="app">
+    <h1>{{ getCurrentTime() }}</h1>
+  </div>
+  <div id="app1">
+    <p>Counter: {{ count }}</p>
+    <!--<button @click="increment">Increment</button>-->
+    <button v-on:click="increases">Increment</button>
+    <!--<button @click="decrement">Decrement</button>-->
+    <button v-on:click="decreases">Decrement</button>
+  </div>
+
+  <script src="app-5.js"></script>
+</body>
+</html>

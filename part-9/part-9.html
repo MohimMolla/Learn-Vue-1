@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<!-- Include Vue.js using a script tag -->
+	<script src="vue.global.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h2>Vue js 3 Bangla Tutrial </h2>
+		<p>Class Binding</p>
+	</header>
+	<div id="app">
+
+		<button class="button" :class="{active : activeClass == 'red'}" @click="setclass('red')">Red</button>
+
+		<button class="button" :class="{active : activeClass == 'green',}" @click="setclass('green')">Green</button>
+
+		<button class="button" :class="{active : activeClass == 'blue'}" @click="setclass('blue')">Blue</button>
+
+		<button :class="['button', 'active']">Always active</button>
+		<br>
+		<div :class="activeClass">
+
+		</div>
+
+	</div>
+
+	<script src="app.js"></script>
+	
+</body>
+
+</html>
