@@ -13,16 +13,23 @@
 <body>
   <header>
     <h2>Vue JS 3 Bangla Tutorial</h2>
-    <h3>Watcher</h3>
+    <h3>Computed property vs Method vs Watcher</h3>
   </header>
 
   <div id="app">
-    <input type="" v-model="mobile" name="" value="" placeholder="inter your mobile number">
+
+    <input type="" v-model="firstname" name="" value="" placeholder="inter your First Name">
     <br>
-    <input type="" v-model="name.firstname" name="" value="" placeholder="inter your First Name">
+    <input type="" v-model="lastname" name="" value="" placeholder="inter your Last Name">
     <br>
-    <input type="" v-model="name.lastname" name="" value="" placeholder="inter your Last Name">
-    <br>
+    <!--when i use computed-->
+    <!--<p>Your Full Name is : {{fullname}}</p>-->
+
+    <!--when i use mehodes-->
+    <!--<p>Your Full Name is : {{fullname()}}</p>-->
+
+    <!--when i use watch-->
+ <p>Your Full Name is : {{fullname}}</p>
 
   </div>
 
